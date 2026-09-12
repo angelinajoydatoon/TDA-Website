@@ -351,6 +351,36 @@
             color: var(--gold);
         }
 
+        /* JOIN US BUTTON STYLING */
+        .team-join-container {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .join-us-btn {
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: var(--primary-blue);
+            color: var(--gold);
+            border: 2px solid var(--gold);
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .join-us-btn:hover {
+            background-color: var(--gold);
+            color: var(--primary-blue);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+            transform: translateY(-3px);
+        }
+
         /* ------------------ TEAM MEMBER PROFILE RESUME MODAL ------------------ */
         .profile-modal-box {
             background: var(--primary-blue);
@@ -1134,6 +1164,10 @@
                 </div>
 
             </div>
+        </div>
+
+        <div class="team-join-container">
+            <a href="https://forms.gle/6om8oCwx8CeqoDL28" target="_blank" class="join-us-btn">join us</a>
         </div>
     </section>
 
