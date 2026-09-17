@@ -289,8 +289,8 @@
 
         .carousel-track {
             display: flex;
-            width: calc(240px * 16); 
-            animation: infiniteScroll 22s linear infinite;
+            width: calc(240px * 22); 
+            animation: infiniteScroll 30s linear infinite;
         }
 
         .carousel-track.paused {
@@ -299,7 +299,7 @@
 
         @keyframes infiniteScroll {
             0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-240px * 8)); }
+            100% { transform: translateX(calc(-240px * 11)); }
         }
 
         .team-member {
@@ -1079,88 +1079,118 @@
         <div class="carousel-track-container" id="carouselContainer">
             <div class="carousel-track" id="carouselTrack">
                 
-                <!-- 8 ORIGINAL MEMBERS WITH CLICK EVENTS FOR PROFILE RESUME -->
-                <div class="team-member" onclick="openMemberProfile('Datoon')">
-                    <div class="circle-frame"><img src="Datoon.jpg" alt="Datoon"></div>
-                    <p class="member-name">Datoon</p>
-                    <p class="member-role">President / Leader</p>
-                </div>
-                <div class="team-member" onclick="openMemberProfile('Delos Reyes')">
-                    <div class="circle-frame"><img src="Delos Reyes.jpeg" alt="Delos Reyes"></div>
-                    <p class="member-name">Delos Reyes</p>
-                    <p class="member-role">Vice President</p>
-                </div>
-                <div class="team-member" onclick="openMemberProfile('Diapana')">
-                    <div class="circle-frame"><img src="Diapana.jpg" alt="Diapana"></div>
-                    <p class="member-name">Diapana</p>
-                    <p class="member-role">General Secretary</p>
-                </div>
-                <div class="team-member" onclick="openMemberProfile('Laz')">
-                    <div class="circle-frame"><img src="Laz.jpg" alt="Laz"></div>
-                    <p class="member-name">Laz</p>
-                    <p class="member-role">Treasurer</p>
-                </div>
+                <!-- 11 MEMBERS WITH CLICK EVENTS FOR PROFILE RESUME -->
                 <div class="team-member" onclick="openMemberProfile('Perpas')">
                     <div class="circle-frame"><img src="Perpas.jpg" alt="Perpas"></div>
-                    <p class="member-name">Perpas</p>
-                    <p class="member-role">Auditor</p>
+                    <p class="member-name">Gian Mart Perpas</p>
+                    <p class="member-role">President</p>
                 </div>
                 <div class="team-member" onclick="openMemberProfile('Seva')">
                     <div class="circle-frame"><img src="Seva.jpg" alt="Seva"></div>
-                    <p class="member-name">Seva</p>
-                    <p class="member-role">Public Relations Officer</p>
-                </div>
-                <div class="team-member" onclick="openMemberProfile('Suriaga')">
-                    <div class="circle-frame"><img src="Suriaga.jpg" alt="Suriaga"></div>
-                    <p class="member-name">Suriaga</p>
-                    <p class="member-role">Project Coordinator</p>
+                    <p class="member-name">Alvin P. Seva</p>
+                    <p class="member-role">Vice President</p>
                 </div>
                 <div class="team-member" onclick="openMemberProfile('Tejeda')">
                     <div class="circle-frame"><img src="Tejeda.jpeg" alt="Tejeda"></div>
-                    <p class="member-name">Tejeda</p>
-                    <p class="member-role">Student Rights Advocate</p>
+                    <p class="member-name">Kevin Carl S. Tejeda</p>
+                    <p class="member-role">Secretary</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Diapana')">
+                    <div class="circle-frame"><img src="Diapana.jpg" alt="Diapana"></div>
+                    <p class="member-name">Beverly Joy Diapana</p>
+                    <p class="member-role">Treasurer</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Demasuay')">
+                    <div class="circle-frame"><img src="Demasuay.jpg" alt="Demasuay"></div>
+                    <p class="member-name">Kent Rod D. Demasu-ay</p>
+                    <p class="member-role">Adviser</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('DelosReyes')">
+                    <div class="circle-frame"><img src="Delos Reyes.jpeg" alt="Delos Reyes"></div>
+                    <p class="member-name">Leo P. De Los Reyes</p>
+                    <p class="member-role">CAS Commissioner</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Suriaga')">
+                    <div class="circle-frame"><img src="Suriaga.jpg" alt="Suriaga"></div>
+                    <p class="member-name">Jonalyn Suriaga</p>
+                    <p class="member-role">CIT Commissioner</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Datoon')">
+                    <div class="circle-frame"><img src="Datoon.jpg" alt="Datoon"></div>
+                    <p class="member-name">Angelina Joy A. Datoon</p>
+                    <p class="member-role">CCI - CBL Commissioner</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Laz')">
+                    <div class="circle-frame"><img src="Laz.jpg" alt="Laz"></div>
+                    <p class="member-name">Kim Bryan D. Laz</p>
+                    <p class="member-role">CEA Commissioner</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Altura')">
+                    <div class="circle-frame"><img src="Altura.jpg" alt="Altura"></div>
+                    <p class="member-name">Angela A. Altura</p>
+                    <p class="member-role">Commissioner of COE</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('AuditorTemplate')">
+                    <div class="circle-frame"><img src="Auditor.jpg" alt="Auditor"></div>
+                    <p class="member-name">TBD Auditor</p>
+                    <p class="member-role">Auditor</p>
                 </div>
 
-                <!-- 8 DUPLICATED MEMBERS FOR CONTINUOUS LOOP -->
-                <div class="team-member" onclick="openMemberProfile('Datoon')">
-                    <div class="circle-frame"><img src="Datoon.jpg" alt="Datoon"></div>
-                    <p class="member-name">Datoon</p>
-                    <p class="member-role">President / Leader</p>
-                </div>
-                <div class="team-member" onclick="openMemberProfile('Delos Reyes')">
-                    <div class="circle-frame"><img src="Delos Reyes.jpeg" alt="Delos Reyes"></div>
-                    <p class="member-name">Delos Reyes</p>
-                    <p class="member-role">Vice President</p>
-                </div>
-                <div class="team-member" onclick="openMemberProfile('Diapana')">
-                    <div class="circle-frame"><img src="Diapana.jpg" alt="Diapana"></div>
-                    <p class="member-name">Diapana</p>
-                    <p class="member-role">General Secretary</p>
-                </div>
-                <div class="team-member" onclick="openMemberProfile('Laz')">
-                    <div class="circle-frame"><img src="Laz.jpg" alt="Laz"></div>
-                    <p class="member-name">Laz</p>
-                    <p class="member-role">Treasurer</p>
-                </div>
+                <!-- 11 DUPLICATED MEMBERS FOR CONTINUOUS LOOP -->
                 <div class="team-member" onclick="openMemberProfile('Perpas')">
                     <div class="circle-frame"><img src="Perpas.jpg" alt="Perpas"></div>
-                    <p class="member-name">Perpas</p>
-                    <p class="member-role">Auditor</p>
+                    <p class="member-name">Gian Mart Perpas</p>
+                    <p class="member-role">President</p>
                 </div>
                 <div class="team-member" onclick="openMemberProfile('Seva')">
                     <div class="circle-frame"><img src="Seva.jpg" alt="Seva"></div>
-                    <p class="member-name">Seva</p>
-                    <p class="member-role">Public Relations Officer</p>
-                </div>
-                <div class="team-member" onclick="openMemberProfile('Suriaga')">
-                    <div class="circle-frame"><img src="Suriaga.jpg" alt="Suriaga"></div>
-                    <p class="member-name">Suriaga</p>
-                    <p class="member-role">Project Coordinator</p>
+                    <p class="member-name">Alvin P. Seva</p>
+                    <p class="member-role">Vice President</p>
                 </div>
                 <div class="team-member" onclick="openMemberProfile('Tejeda')">
                     <div class="circle-frame"><img src="Tejeda.jpeg" alt="Tejeda"></div>
-                    <p class="member-name">Tejeda</p>
-                    <p class="member-role">Student Rights Advocate</p>
+                    <p class="member-name">Kevin Carl S. Tejeda</p>
+                    <p class="member-role">Secretary</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Diapana')">
+                    <div class="circle-frame"><img src="Diapana.jpg" alt="Diapana"></div>
+                    <p class="member-name">Beverly Joy Diapana</p>
+                    <p class="member-role">Treasurer</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Demasuay')">
+                    <div class="circle-frame"><img src="Demasuay.jpg" alt="Demasuay"></div>
+                    <p class="member-name">Kent Rod D. Demasu-ay</p>
+                    <p class="member-role">Adviser</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('DelosReyes')">
+                    <div class="circle-frame"><img src="Delos Reyes.jpeg" alt="Delos Reyes"></div>
+                    <p class="member-name">Leo P. De Los Reyes</p>
+                    <p class="member-role">CAS Commissioner</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Suriaga')">
+                    <div class="circle-frame"><img src="Suriaga.jpg" alt="Suriaga"></div>
+                    <p class="member-name">Jonalyn Suriaga</p>
+                    <p class="member-role">CIT Commissioner</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Datoon')">
+                    <div class="circle-frame"><img src="Datoon.jpg" alt="Datoon"></div>
+                    <p class="member-name">Angelina Joy A. Datoon</p>
+                    <p class="member-role">CCI - CBL Commissioner</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Laz')">
+                    <div class="circle-frame"><img src="Laz.jpg" alt="Laz"></div>
+                    <p class="member-name">Kim Bryan D. Laz</p>
+                    <p class="member-role">CEA Commissioner</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('Altura')">
+                    <div class="circle-frame"><img src="Altura.jpg" alt="Altura"></div>
+                    <p class="member-name">Angela A. Altura</p>
+                    <p class="member-role">Commissioner of COE</p>
+                </div>
+                <div class="team-member" onclick="openMemberProfile('AuditorTemplate')">
+                    <div class="circle-frame"><img src="Auditor.jpg" alt="Auditor"></div>
+                    <p class="member-name">TBD Auditor</p>
+                    <p class="member-role">Auditor</p>
                 </div>
 
             </div>
@@ -1208,12 +1238,12 @@
                     <a id="profEmail" href="#" class="contact-card-value">email@isatu.edu.ph</a>
                 </div>
                 <div class="contact-card">
-                    <span class="contact-card-label">Social Profile</span>
-                    <a id="profSocial" href="#" target="_blank" class="contact-card-value">Facebook Profile</a>
+                    <span class="contact-card-label">Phone Number</span>
+                    <span id="profPhone" class="contact-card-value">N/A</span>
                 </div>
                 <div class="contact-card">
-                    <span class="contact-card-label">Office / Department</span>
-                    <span id="profOffice" class="contact-card-value">TDA Executive Office</span>
+                    <span class="contact-card-label">Social / Professional Links</span>
+                    <a id="profSocial" href="#" target="_blank" class="contact-card-value">Profile Link</a>
                 </div>
             </div>
         </div>
@@ -1383,7 +1413,7 @@
         <div class="contact-box">
             <div class="contact-item">
                 <span class="contact-label">Email Address</span>
-                <a href="mailto:tradeandemocraticalliance@isatu.edu.ph" class="contact-value">tradeandemocraticalliance@isatu.edu.ph</a>
+                <a href="mailto:angelinajoy.datoon@students.isatu.edu.ph" class="contact-value">angelinajoy.datoon@students.isatu.edu.ph</a>
             </div>
             <div class="contact-item">
                 <span class="contact-label">Official Facebook Page</span>
@@ -1396,133 +1426,179 @@
     <script>
         /* MEMBER RESUME / PORTFOLIO DATABASE WITH DIRECT CONTACT DATA */
         const teamProfiles = {
-            "Datoon": {
-                name: "Datoon",
-                title: "President & Alliance Leader",
-                image: "Datoon.jpg",
-                tagline: "Leading with Good Faith, Justice, and Student Empowerment.",
-                bio: "Datoon serves as the primary executive officer of the Tradean Democratic Alliance. With a vision focused on unifying student voices across all ISAT U departments, Datoon oversees strategic planning, policy advocacy, and community outreach operations.",
-                skills: ["Strategic Leadership", "Public Advocacy", "Policy Reform", "Conflict Resolution", "Community Organizing"],
-                duties: [
-                    "Directs all TDA administrative initiatives and policy developments.",
-                    "Represents the student body in key administrative dialogues with ISAT U officials.",
-                    "Spearheads partnerships with regional student award bodies and TOSIA initiatives."
-                ],
-                email: "datoon.tda@isatu.edu.ph",
-                social: "https://facebook.com",
-                office: "TDA Executive Directorate"
-            },
-            "Delos Reyes": {
-                name: "Delos Reyes",
-                title: "Vice President",
-                image: "Delos Reyes.jpeg",
-                tagline: "Driving Operational Excellence and Action-Oriented Governance.",
-                bio: "Delos Reyes provides executive support across all alliance projects. Specializing in operational logistics and committee management, Delos Reyes ensures all TDA goals are implemented seamlessly.",
-                skills: ["Operations Management", "Team Leadership", "Strategic Planning", "Student Welfare"],
-                duties: [
-                    "Oversees internal committee operations and team performance.",
-                    "Acts as primary presiding officer in executive council absences.",
-                    "Coordinates multi-departmental projects and community service campaigns."
-                ],
-                email: "delosreyes.tda@isatu.edu.ph",
-                social: "https://facebook.com",
-                office: "Internal Affairs Division"
-            },
-            "Diapana": {
-                name: "Diapana",
-                title: "General Secretary",
-                image: "Diapana.jpg",
-                tagline: "Precision, Transparency, and Systematic Administration.",
-                bio: "Diapana manages official documentation, record keeping, and internal organizational communications within TDA to maintain institutional memory and transparency.",
-                skills: ["Official Documentation", "Records Management", "Communications", "Organizational Governance"],
-                duties: [
-                    "Maintains official records of alliance charters, resolutions, and meeting minutes.",
-                    "Manages internal communications between executive officers and committee heads.",
-                    "Facilitates accreditation compliance with the Office of Student Affairs and Services."
-                ],
-                email: "diapana.tda@isatu.edu.ph",
-                social: "https://facebook.com",
-                office: "Secretariat Desk"
-            },
-            "Laz": {
-                name: "Laz",
-                title: "Treasurer",
-                image: "Laz.jpg",
-                tagline: "Ensuring Fiscal Responsibility, Integrity, and Accountability.",
-                bio: "Laz oversees financial stewardship and resource allocation for all alliance activities, ensuring maximum budget efficiency for student welfare initiatives.",
-                skills: ["Financial Planning", "Budget Allocation", "Fiscal Auditing", "Resource Management"],
-                duties: [
-                    "Prepares annual budgets and project expenditure reports.",
-                    "Manages TDA project funds with absolute fiscal transparency.",
-                    "Generates financial audits following major campus campaigns."
-                ],
-                email: "laz.tda@isatu.edu.ph",
-                social: "https://facebook.com",
-                office: "Finance & Treasury Bureau"
-            },
             "Perpas": {
-                name: "Perpas",
-                title: "Auditor",
+                name: "Gian Mart Perpas",
+                title: "President",
                 image: "Perpas.jpg",
-                tagline: "Upholding Integrity, Fair Practice, and Accountability.",
-                bio: "Perpas provides independent financial and operational oversight to safeguard organizational standards and ensure complete transparency to the student body.",
-                skills: ["Financial Audit", "Compliance", "Process Management", "Risk Assessment"],
+                tagline: "Whatever you do make a difference, and it's up to you on what difference you want to make",
+                bio: "Gian Mart Perpas serves as the President of the Tradean Democratic Alliance, leading organizational goals with an analytical, data-driven, and transformative approach.",
+                skills: ["Mathematical Analysis", "Problem Solving", "Data Analysis", "Statistical Analysis", "Computational Math", "Data Visualization", "Analytical Thinking", "Adaptability and Time Management"],
                 duties: [
-                    "Audits organizational expenditures and financial statements.",
-                    "Monitors policy adherence across all alliance operations.",
-                    "Verifies procedural compliance during elections and community projects."
+                    "Organizer of Rega-LOVE: Small Hands, Big Smiles",
+                    "Organizer of Leadership Beyond Borders: Transforming Student Leaders into Change Makers",
+                    "Organizer of Pulso sang Tradeans",
+                    "Campaign Manager of Student Republic Election",
+                    "Invited Speaker/Volunteer in Project IGPAT: Integrated Guide for Personal Awareness and Transformative Health"
                 ],
-                email: "perpas.tda@isatu.edu.ph",
-                social: "https://facebook.com",
-                office: "Audit & Oversight Committee"
+                email: "gianmartperpas@gmail.com",
+                phone: "09109982559",
+                social: "https://www.linkedin.com/in/gian-mart-perpas-b3548a42a"
             },
-            "Seva": {
-                name: "Seva",
-                title: "Public Relations Officer",
-                image: "Seva.jpg",
-                tagline: "Amplifying Tradean Voices and Digital Advocacy.",
-                bio: "Seva directs public affairs, media outreach, and social communications for TDA, serving as the bridge between the alliance and the university community.",
-                skills: ["Public Relations", "Media Strategy", "Digital Communications", "Content Creation"],
+            "Demasuay": {
+                name: "Demasu-ay, Kent Rod D.",
+                title: "Adviser",
+                image: "Demasuay.jpg",
+                tagline: "God doesn’t call the qualified, He qualifies the called",
+                bio: "Kent Rod D. Demasu-ay serves as Adviser to the Tradean Democratic Alliance, providing strategic oversight, technical insight, and institutional guidance.",
+                skills: ["Plays musical instruments (e.g. Guitar, Bass, Flute)", "GIS Specialist", "Financial Advisor", "Python user", "R user", "Data analyst"],
                 duties: [
-                    "Manages official social media channels and external press statements.",
-                    "Designs campaigns that highlight student rights and active projects.",
-                    "Engages with campus journalists and student publications."
+                    "Provides strategic, analytical, and professional guidance to TDA officers.",
+                    "Advises executive projects and technical initiatives."
                 ],
-                email: "seva.tda@isatu.edu.ph",
-                social: "https://facebook.com",
-                office: "Media & PR Office"
+                email: "kentrod.demasu-ay@isatu.edu.ph",
+                phone: "09064194321",
+                social: "https://www.linkedin.com/in/kent-rod-demasu-ay-ab1128234?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            },
+            "DelosReyes": {
+                name: "De Los Reyes, Leo P.",
+                title: "CAS Commissioner",
+                image: "Delos Reyes.jpeg",
+                tagline: "Everything that you do define your existence",
+                bio: "Leo P. De Los Reyes serves as the CAS Commissioner, advocating for student representation, literary expression, and organizational support.",
+                skills: ["Public speaking", "Writer"],
+                duties: [
+                    "CBL and Supporting the TDA along the way"
+                ],
+                email: "Palmesdelosreyesleo@gmail.com",
+                phone: "09196167435",
+                social: "N/A"
             },
             "Suriaga": {
-                name: "Suriaga",
-                title: "Project Coordinator",
+                name: "Suriaga, Jonalyn",
+                title: "CIT Commissioner",
                 image: "Suriaga.jpg",
-                tagline: "Transforming Concepts into Impactful Community Action.",
-                bio: "Suriaga heads project management for TDA, coordinating events from initial planning stages through on-the-ground execution.",
-                skills: ["Event Management", "Logistics", "Community Engagement", "Volunteer Coordination"],
+                tagline: "It is what it is",
+                bio: "Jonalyn Suriaga serves as the CIT Commissioner, coordinating student representation, leadership initiatives, and campus events.",
+                skills: ["Leadership", "Communication", "Teamwork", "Time management", "Problem-solving", "Public speaking", "Event planning", "Organization and adaptability"],
                 duties: [
-                    "Coordinates logistical setups for community outreach initiatives like Project IGPAT.",
-                    "Manages volunteer teams and event schedules.",
-                    "Evaluates project outcomes to continuously improve event quality."
+                    "Student representation",
+                    "Event organization",
+                    "Committee participation",
+                    "Community engagement",
+                    "Project coordination",
+                    "Peer support and leadership initiatives"
                 ],
-                email: "suriaga.tda@isatu.edu.ph",
-                social: "https://facebook.com",
-                office: "Project Management Office"
+                email: "persisadelaide@gmail.com",
+                phone: "09485970665",
+                social: "N/A"
+            },
+            "Seva": {
+                name: "Seva, Alvin P.",
+                title: "Vice President",
+                image: "Seva.jpg",
+                tagline: "Be the cotton between sheets of glass, to keep others from shattering. - Saint Marie Eugenie",
+                bio: "Alvin P. Seva serves as Vice President, bringing extensive expertise in scientific research, environmental governance, and educational innovation to student leadership.",
+                skills: ["Science communication", "Scientific research", "Lesson planning", "Curriculum alignment", "Classroom management", "Instructional design", "Educational technology integration", "Data analysis", "Academic writing", "Project management", "Event planning", "Leadership", "Organizational management", "Team collaboration", "Stakeholder coordination", "Environmental advocacy", "Sustainability planning", "Public speaking", "Written communication", "Critical thinking", "Problem-solving", "Innovation", "Creative thinking", "Technology proficiency", "Strategic planning", "Community engagement", "Time management"],
+                duties: [
+                    "Student leadership and representation",
+                    "Environmental governance and advocacy, clean-up drive coordination, waste reduction and upcycling initiatives",
+                    "Environmental awareness campaigns, science education, technology-integrated learning, educational research, AI-assisted education research",
+                    "Innovation development, student organization development, event coordination, stakeholder collaboration",
+                    "Science communication, sustainability promotion, community engagement, volunteerism, Proyekto Volunteer Network (PVN) participation"
+                ],
+                email: "alvin.seva@students.isatu.edu.ph",
+                phone: "09670673126",
+                social: "N/A"
+            },
+            "Datoon": {
+                name: "Datoon, Angelina Joy A.",
+                title: "CCI - CBL Commissioner",
+                image: "Datoon.jpg",
+                tagline: "None. Mottos are just words, I want action.",
+                bio: "Angelina Joy A. Datoon serves as the CCI - CBL Commissioner, driving technical innovation, web development, public messaging, and constitutional amendments for TDA.",
+                skills: ["Public speaking", "Writing", "Persuasion", "Programming", "Data analysis", "Web development", "Prompt engineering"],
+                duties: [
+                    "Created the TDA website",
+                    "Writes captions for the TDA Facebook page",
+                    "Proposes amendments to the Constitution and By-Laws"
+                ],
+                email: "angelinajoydatoon@students.isatu.edu.ph",
+                phone: "09366593815",
+                social: "https://ajd-portfolio-website-ex1dtb582.vercel.app/"
+            },
+            "Laz": {
+                name: "Laz, Kim Bryan D.",
+                title: "CEA Commissioner",
+                image: "Laz.jpg",
+                tagline: "Feel the fear, and do it anyway.",
+                bio: "Kim Bryan D. Laz serves as the CEA Commissioner, promoting student involvement and engineering student representation across the institution.",
+                skills: ["Leadership", "Communication", "Team Management and Collaboration Skills"],
+                duties: [
+                    "Student Leadership and Representation",
+                    "CEA Student Engagement and Promotion of Student Participation"
+                ],
+                email: "lazkimbryan@gmail.com",
+                phone: "09664808284",
+                social: "N/A"
             },
             "Tejeda": {
-                name: "Tejeda",
-                title: "Student Rights Advocate",
+                name: "Tejeda, Kevin Carl S.",
+                title: "Secretary",
                 image: "Tejeda.jpeg",
-                tagline: "Unwavering Dedication to Justice and Student Advocacy.",
-                bio: "Tejeda specializes in student rights advocacy, ensuring student concerns and grievances receive prompt, fair, and democratic attention.",
-                skills: ["Student Advocacy", "Policy Analysis", "Negotiation", "Rights & Welfare"],
+                tagline: "If you want it to happen, make it happen",
+                bio: "Kevin Carl S. Tejeda serves as the Secretary of TDA, maintaining organizational communications, service initiatives, and administrative logistics.",
+                skills: ["Sewing", "Garment Construction", "Leading a group", "Leadership"],
                 duties: [
-                    "Gathers and analyzes feedback regarding student welfare and campus issues.",
-                    "Helps organize forums and rights awareness programs.",
-                    "Serves as student advocate in consultation meetings."
+                    "Volunteered in community activities",
+                    "Served as a leader or officer in an organization"
                 ],
-                email: "tejeda.tda@isatu.edu.ph",
-                social: "https://facebook.com",
-                office: "Student Rights Advocacy Board"
+                email: "kevincarl.tejeda@students.isatu.edu.ph",
+                phone: "09649244210",
+                social: "N/A"
+            },
+            "Diapana": {
+                name: "Beverly Joy Diapana",
+                title: "Treasurer",
+                image: "Diapana.jpg",
+                tagline: "Become, despite the evidence",
+                bio: "Beverly Joy Diapana serves as Treasurer, applying strategic communication, critical thinking, and disciplined financial stewardship to advance student projects.",
+                skills: ["Leadership", "Writing", "Campus Journalism", "Critical Thinking", "Problem Solving", "Strategic Communication", "Adaptability", "Initiative"],
+                duties: [
+                    "Leadership, project coordination, and event management",
+                    "Communication, advocacy, and active service to members and constituents"
+                ],
+                email: "bev.zsj@gmail.com",
+                phone: "09278129147",
+                social: "https://www.facebook.com/share/1QusHsWLzY/"
+            },
+            "Altura": {
+                name: "Altura, Angela A.",
+                title: "Commissioner of College of Education",
+                image: "Altura.jpg",
+                tagline: "Don’t settle for less, because you deserve the best, keep striving, keep believing, and let your worth shine brighter than your doubts.",
+                bio: "Angela A. Altura serves as Commissioner of College of Education, ensuring procedural fairness, compliance, and transparent communication across departments.",
+                skills: ["Communication skill", "Problem solving skill", "Practical thinking skills"],
+                duties: [
+                    "Acts as a bridge between the College of Education administration and the student body to maintain transparency, compliance, and procedural fairness."
+                ],
+                email: "angela.altura@students.isatu.edu.ph",
+                phone: "09752419005",
+                social: "FB: ANGELA ANAUD ALTURA | Instagram: angela_anaud"
+            },
+            "AuditorTemplate": {
+                name: "TBD Auditor",
+                title: "Auditor",
+                image: "Auditor.jpg",
+                tagline: "Upholding Integrity, Fair Practice, and Accountability.",
+                bio: "This profile serves as a placeholder for the TDA Auditor position. Details will be updated upon official confirmation.",
+                skills: ["Financial Audit", "Compliance Management", "Risk Assessment", "Organizational Governance"],
+                duties: [
+                    "Audits organizational expenditures and financial records.",
+                    "Ensures policy compliance across all official alliance activities."
+                ],
+                email: "auditor@students.isatu.edu.ph",
+                phone: "N/A",
+                social: "N/A"
             }
         };
 
@@ -1564,11 +1640,19 @@
             emailElem.textContent = profile.email;
             emailElem.href = `mailto:${profile.email}`;
 
-            const socialElem = document.getElementById('profSocial');
-            socialElem.textContent = `${profile.name} - Facebook`;
-            socialElem.href = profile.social;
+            const phoneElem = document.getElementById('profPhone');
+            phoneElem.textContent = profile.phone || "N/A";
 
-            document.getElementById('profOffice').textContent = profile.office;
+            const socialElem = document.getElementById('profSocial');
+            if (profile.social && profile.social.startsWith("http")) {
+                socialElem.textContent = profile.social;
+                socialElem.href = profile.social;
+                socialElem.target = "_blank";
+            } else {
+                socialElem.textContent = profile.social || "N/A";
+                socialElem.removeAttribute("href");
+                socialElem.removeAttribute("target");
+            }
 
             document.getElementById('profileModal').classList.add('active');
             document.body.style.overflow = 'hidden';
