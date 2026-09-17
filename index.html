@@ -53,11 +53,30 @@
             padding: 15px 50px;
         }
 
-        .nav-logo-img {
-            height: 40px;
-            width: auto;
-            display: block;
-            object-fit: contain;
+        .nav-logo-text {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: linear-gradient(
+                110deg, 
+                var(--gold-dark) 0%, 
+                var(--gold) 35%, 
+                var(--gold-light) 50%, 
+                var(--gold) 65%, 
+                var(--gold-dark) 100%
+            );
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-logo-text:hover {
+            transform: scale(1.05);
         }
 
         .nav-links {
@@ -1039,9 +1058,7 @@
 
     <!-- NAV BAR -->
     <nav class="navbar">
-        <a href="#">
-            <img src="LOGO.jpg" alt="TDA Logo" class="nav-logo-img">
-        </a>
+        <a href="#" class="nav-logo-text">TDA</a>
         <ul class="nav-links">
             <li><a href="#about">About Us</a></li>
             <li><a href="#team">Meet the Team</a></li>
@@ -1299,10 +1316,10 @@
                             <div class="preview-thumb-wrapper">
                                 <img src="NextGenPh.png" class="preview-thumb" alt="NextGenPH Competition">
                             </div>
-                            <p class="preview-description">The Tradean Democratic Alliance presented four forward-thinking, resilient solutions at this year's NextGenPH competition to tackle energy grid failures, fuel shortages, and rural infrastructure challenges.</p>
+                            <p class="preview-description">At this year's NextGenPH competition, the Tradean Democratic Alliance presented four forward-thinking, resilient solutions designed to address energy grid failures, fuel shortages, and rural infrastructure challenges.</p>
                         </div>
 
-                        <!-- PROJECT 3 -->
+                        <!-- PROJECT 3: PANUGOD 2026 -->
                         <div class="event-box" onclick="openModal('modal3')">
                             <div class="preview-header-row">
                                 <span class="preview-date">September 19, 2026</span>
@@ -1310,7 +1327,7 @@
                             </div>
                             <h4 class="preview-title">𝑷𝒂𝒏𝒖𝒈𝒐𝒅 𝟐𝟎𝟐𝟔: 𝑺𝒕𝒖𝒅𝒆𝒏𝒕 𝑳𝒆𝒂𝒅𝒆𝒓𝒔’ 𝑺𝒕𝒓𝒂𝒕𝒆𝒈𝒊𝒄 𝑨𝒍𝒊𝒈𝒏𝒎𝒆𝒏𝒕 𝒂𝒏𝒅 𝑪𝒂𝒑𝒂𝒄𝒊𝒕𝒚-𝑩𝒖𝒊𝒍𝒅𝒊𝒏𝒈 𝑺𝒖𝒎𝒎𝒊𝒕</h4>
                             <div class="preview-thumb-wrapper">
-                                <img src="https://via.placeholder.com/300x200/0A192F/007BFF?text=coming+soon" class="preview-thumb" alt="Panugod 2026">
+                                <img src="comingsoon.jpg" class="preview-thumb" alt="Panugod 2026">
                             </div>
                             <p class="preview-description">Skill-building workshops aimed at developing leadership capabilities and parliamentary procedures for student leaders.</p>
                         </div>
@@ -1323,7 +1340,7 @@
                             </div>
                             <h4 class="preview-title">Green ISAT U Environmental Drive</h4>
                             <div class="preview-thumb-wrapper">
-                                <img src="https://via.placeholder.com/300x200/0A192F/FFD700?text=Upcoming+Project" class="preview-thumb" alt="Green ISAT U">
+                                <img src="comingsoon.jpg" class="preview-thumb" alt="Green ISAT U">
                             </div>
                             <p class="preview-description">An initiative uniting students across campus for recycling, sustainability awareness, and tree planting.</p>
                         </div>
@@ -1386,15 +1403,12 @@
         </div>
     </div>
 
+    <!-- MODAL 3: PANUGOD 2026 -->
     <div id="modal3" class="modal-overlay" onclick="closeModalOnOutsideClick(event, 'modal3')">
         <div class="modal-box">
             <button class="modal-close-btn" onclick="closeModal('modal3')">&times;</button>
             <div class="modal-gallery">
-                <div class="upcoming-banner">
-                    <div class="upcoming-banner-icon">⏳</div>
-                    <h4 class="upcoming-banner-title">Upcoming Activity</h4>
-                    <p class="upcoming-banner-text">This project has not been implemented yet. Event photos and highlights will be uploaded here following its execution.</p>
-                </div>
+                <img src="comingsoon.jpg" alt="Panugod 2026" class="modal-img">
             </div>
             <h3 class="modal-title">𝑷𝒂𝒏𝒖𝒈𝒐𝒅 𝟐𝟎𝟐𝟔: 𝑺𝒕𝒖𝒅𝒆𝒏𝒕 𝑳𝒆𝒂𝒅𝒆𝒓𝒔’ 𝑺𝒕𝒓𝒂𝒕𝒆𝒈𝒊𝒄 𝑨𝒍𝒊𝒈𝒏𝒎𝒆𝒏𝒕 𝒂𝒏𝒅 𝑪𝒂𝒑𝒂𝒄𝒊𝒕𝒚-𝑩𝒖𝒊𝒍𝒅𝒊𝒏𝒈 𝑺𝒖𝒎𝒎𝒊𝒕</h3>
             <p class="modal-date">Scheduled Date: September 19, 2026 | Location: ISAT U Multi-Purpose Hall</p>
@@ -1404,15 +1418,12 @@
         </div>
     </div>
 
+    <!-- MODAL 4 -->
     <div id="modal4" class="modal-overlay" onclick="closeModalOnOutsideClick(event, 'modal4')">
         <div class="modal-box">
             <button class="modal-close-btn" onclick="closeModal('modal4')">&times;</button>
             <div class="modal-gallery">
-                <div class="upcoming-banner">
-                    <div class="upcoming-banner-icon">⏳</div>
-                    <h4 class="upcoming-banner-title">Upcoming Activity</h4>
-                    <p class="upcoming-banner-text">This project has not been implemented yet. Event photos and highlights will be uploaded here following its execution.</p>
-                </div>
+                <img src="comingsoon.jpg" alt="Green ISAT U" class="modal-img">
             </div>
             <h3 class="modal-title">Green ISAT U Environmental Drive</h3>
             <p class="modal-date">Scheduled Date: October 27, 2026 | Location: ISAT U Campus Grounds</p>
