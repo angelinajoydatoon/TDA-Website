@@ -53,13 +53,11 @@
             padding: 15px 50px;
         }
 
-        .nav-logo {
-            font-family: 'Cinzel', serif;
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--gold);
-            text-decoration: none;
-            letter-spacing: 2px;
+        .nav-logo-img {
+            height: 40px;
+            width: auto;
+            display: block;
+            object-fit: contain;
         }
 
         .nav-links {
@@ -926,6 +924,17 @@
             margin-bottom: 15px;
         }
 
+        .modal-bullet-list {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: #E2E8F0;
+        }
+
+        .modal-bullet-list li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
         .photo-credits {
             font-size: 0.9rem;
             color: var(--gold-light);
@@ -1030,7 +1039,9 @@
 
     <!-- NAV BAR -->
     <nav class="navbar">
-        <a href="#" class="nav-logo">TDA</a>
+        <a href="#">
+            <img src="LOGO.jpg" alt="TDA Logo" class="nav-logo-img">
+        </a>
         <ul class="nav-links">
             <li><a href="#about">About Us</a></li>
             <li><a href="#team">Meet the Team</a></li>
@@ -1278,17 +1289,17 @@
                             <p class="preview-description">The spirit of volunteerism and youth leadership came alive as TDA proudly partnered with TOSIA 2026 for Project IGPAT at Barangay Sooc, Arevalo, Iloilo City.</p>
                         </div>
 
-                        <!-- PROJECT 2 -->
+                        <!-- PROJECT 2: NEXTGENPH -->
                         <div class="event-box" onclick="openModal('modal2')">
                             <div class="preview-header-row">
-                                <span class="preview-date">August 12, 2026</span>
-                                <span class="status-badge upcoming">Upcoming</span>
+                                <span class="preview-date">2026</span>
+                                <span class="status-badge completed">Completed</span>
                             </div>
-                            <h4 class="preview-title">Student Rights & Welfare Forum</h4>
+                            <h4 class="preview-title">NextGenPH Competition Entries</h4>
                             <div class="preview-thumb-wrapper">
-                                <img src="https://via.placeholder.com/300x200/0A192F/FFD700?text=Upcoming+Project" class="preview-thumb" alt="Rights Forum">
+                                <img src="NextGenPh.png" class="preview-thumb" alt="NextGenPH Competition">
                             </div>
-                            <p class="preview-description">An upcoming open dialogue establishing direct avenues between student leaders and administration to promote fairness and rights.</p>
+                            <p class="preview-description">The Tradean Democratic Alliance presented four forward-thinking, resilient solutions at this year's NextGenPH competition to tackle energy grid failures, fuel shortages, and rural infrastructure challenges.</p>
                         </div>
 
                         <!-- PROJECT 3 -->
@@ -1297,9 +1308,9 @@
                                 <span class="preview-date">September 19, 2026</span>
                                 <span class="status-badge upcoming">Upcoming</span>
                             </div>
-                            <h4 class="preview-title">Tradean Leadership Summit</h4>
+                            <h4 class="preview-title">𝑷𝒂𝒏𝒖𝒈𝒐𝒅 𝟐𝟎𝟐𝟔: 𝑺𝒕𝒖𝒅𝒆𝒏𝒕 𝑳𝒆𝒂𝒅𝒆𝒓𝒔’ 𝑺𝒕𝒓𝒂𝒕𝒆𝒈𝒊𝒄 𝑨𝒍𝒊𝒈𝒏𝒎𝒆𝒏𝒕 𝒂𝒏𝒅 𝑪𝒂𝒑𝒂𝒄𝒊𝒕𝒚-𝑩𝒖𝒊𝒍𝒅𝒊𝒏𝒈 𝑺𝒖𝒎𝒎𝒊𝒕</h4>
                             <div class="preview-thumb-wrapper">
-                                <img src="https://via.placeholder.com/300x200/0A192F/FFD700?text=Upcoming+Project" class="preview-thumb" alt="Leadership Summit">
+                                <img src="https://via.placeholder.com/300x200/0A192F/007BFF?text=coming+soon" class="preview-thumb" alt="Panugod 2026">
                             </div>
                             <p class="preview-description">Skill-building workshops aimed at developing leadership capabilities and parliamentary procedures for student leaders.</p>
                         </div>
@@ -1354,21 +1365,24 @@
         </div>
     </div>
 
+    <!-- MODAL 2: NEXTGENPH ENTRIES -->
     <div id="modal2" class="modal-overlay" onclick="closeModalOnOutsideClick(event, 'modal2')">
         <div class="modal-box">
             <button class="modal-close-btn" onclick="closeModal('modal2')">&times;</button>
             <div class="modal-gallery">
-                <div class="upcoming-banner">
-                    <div class="upcoming-banner-icon">⏳</div>
-                    <h4 class="upcoming-banner-title">Upcoming Activity</h4>
-                    <p class="upcoming-banner-text">This project has not been implemented yet. Event photos and highlights will be uploaded here following its execution.</p>
-                </div>
+                <img src="NextGenPh.png" alt="NextGenPH Competition" class="modal-img">
             </div>
-            <h3 class="modal-title">Student Rights & Welfare Forum</h3>
-            <p class="modal-date">Scheduled Date: August 12, 2026 | Location: ISAT U Main Auditorium</p>
+            <h3 class="modal-title">NextGenPH Competition Entries</h3>
+            <p class="modal-date">Year: 2026</p>
             <p class="modal-description">
-                The Tradean Democratic Alliance is preparing for the Student Rights Forum to establish a direct dialogue between student leaders and university administration.
+                At this year's <strong>NextGenPH</strong> competition, the <strong>Tradean Democratic Alliance</strong> presented four forward-thinking, resilient solutions designed to address energy grid failures, fuel shortages, and rural infrastructure challenges:
             </p>
+            <ul class="modal-bullet-list">
+                <li><strong>Solar-Powered Dryer & Rice Mill:</strong> An off-grid processing solution that dries unhusked palay and mills polished rice without fossil fuels or grid electricity, reducing post-harvest losses for farmers and ensuring uninterrupted grain processing for local governments during energy crises.</li>
+                <li><strong>Digital Agricultural Support Platform:</strong> A digital network that eliminates the need for farmers to travel to municipal offices for subsidies and machinery advisories, optimizing scarce energy reserves and maintaining operational food supply chains during fuel shortages.</li>
+                <li><strong>Offline Physical Data Network:</strong> A "sneakernet" architecture using trusted local transporters to physically carry encrypted health files on portable storage devices, keeping medical supply chains and patient tracking active without relying on internet access or additional fuel consumption.</li>
+                <li><strong>Smart Cold-Storage Matching System:</strong> A digital coordination tool that connects smallholder farmers directly to nearby solar-powered cold storage facilities and local buyers, preventing post-harvest spoilage during grid blackouts and safeguarding farm incomes.</li>
+            </ul>
         </div>
     </div>
 
@@ -1382,7 +1396,7 @@
                     <p class="upcoming-banner-text">This project has not been implemented yet. Event photos and highlights will be uploaded here following its execution.</p>
                 </div>
             </div>
-            <h3 class="modal-title">Tradean Leadership Summit</h3>
+            <h3 class="modal-title">𝑷𝒂𝒏𝒖𝒈𝒐𝒅 𝟐𝟎𝟐𝟔: 𝑺𝒕𝒖𝒅𝒆𝒏𝒕 𝑳𝒆𝒂𝒅𝒆𝒓𝒔’ 𝑺𝒕𝒓𝒂𝒕𝒆𝒈𝒊𝒄 𝑨𝒍𝒊𝒈𝒏𝒎𝒆𝒏𝒕 𝒂𝒏𝒅 𝑪𝒂𝒑𝒂𝒄𝒊𝒕𝒚-𝑩𝒖𝒊𝒍𝒅𝒊𝒏𝒈 𝑺𝒖𝒎𝒎𝒊𝒕</h3>
             <p class="modal-date">Scheduled Date: September 19, 2026 | Location: ISAT U Multi-Purpose Hall</p>
             <p class="modal-description">
                 An upcoming leadership summit designed to deliver interactive workshops and parliamentary procedure training.
