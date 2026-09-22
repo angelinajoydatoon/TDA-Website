@@ -11,7 +11,7 @@
         :root {
             --primary-blue: #0A192F;
             --deep-blue: #050C1A;
-            --accent-blue: #1E3A8A;F
+            --accent-blue: #1E3A8A;
             --gold: #FFD700;
             --gold-light: #FFF099;
             --gold-dark: #B8860B;
@@ -1010,10 +1010,12 @@
             font-weight: 600;
             text-decoration: none;
             word-break: break-all;
+            transition: color 0.3s ease;
         }
 
         .contact-value:hover {
             color: var(--gold-light);
+            text-decoration: underline;
         }
 
         @media (max-width: 900px) {
@@ -1315,9 +1317,22 @@
                     <div class="projects-track" id="projectsTrack">
                         
                         <!-- 1. ORGANIZED EVENTS / ACTIVITIES -->
-                        <div class="event-box" data-category="organized" onclick="openModal('modal3')">
+                        <div class="event-box" data-category="organized" onclick="openModal('modal5')">
                             <div class="preview-header-row">
-                                <span class="preview-date">Sept 19, 2026</span>
+                                <span class="preview-date">Sept 18, 2026</span>
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                            <div class="preview-thumb-wrapper">
+                                <img src="tdageneralassembly.jpg" class="preview-thumb" alt="TDA General Assembly">
+                            </div>
+                            <h4 class="preview-title">TDA General Assembly 2026</h4>
+                            <p class="preview-description">The general assembly bringing together members and officers of the Tradean Democratic Alliance.</p>
+                        </div>
+
+                        <!-- 2. PARTNERED EVENTS / ACTIVITIES -->
+                        <div class="event-box" data-category="partnered" onclick="openModal('modal3')">
+                            <div class="preview-header-row">
+                                <span class="preview-date">Sept 25, 2026</span>
                                 <span class="status-badge upcoming">Upcoming</span>
                             </div>
                             <div class="preview-thumb-wrapper">
@@ -1327,19 +1342,6 @@
                             <p class="preview-description">Skill-building workshops aimed at developing leadership capabilities and parliamentary procedures for student leaders.</p>
                         </div>
 
-                        <div class="event-box" data-category="organized" onclick="openModal('modal4')">
-                            <div class="preview-header-row">
-                                <span class="preview-date">Oct 27, 2026</span>
-                                <span class="status-badge upcoming">Upcoming</span>
-                            </div>
-                            <div class="preview-thumb-wrapper">
-                                <img src="comingsoon.jpg" class="preview-thumb" alt="Green ISAT U">
-                            </div>
-                            <h4 class="preview-title">Green ISAT U Environmental Drive</h4>
-                            <p class="preview-description">An initiative uniting students across campus for recycling, sustainability awareness, and tree planting.</p>
-                        </div>
-
-                        <!-- 2. PARTNERED EVENTS / ACTIVITIES -->
                         <div class="event-box" data-category="partnered" onclick="openModal('modal1')">
                             <div class="preview-header-row">
                                 <span class="preview-date">May 16, 2026</span>
@@ -1380,9 +1382,9 @@
             
             <div class="modal-gallery">
                 <button class="modal-nav-btn prev" onclick="changeModalImage(-1)">❮</button>
-                <img id="modalGalleryImg" src="IGPAT.pg.jpg" alt="Project IGPAT Photo" class="modal-img">
+                <img id="modalGalleryImg" src="IGPAT.jpg" alt="Project IGPAT Photo" class="modal-img">
                 <button class="modal-nav-btn next" onclick="changeModalImage(1)">❯</button>
-                <div id="modalImgCounter" class="modal-img-counter">1 / 10</div>
+                <div id="modalImgCounter" class="modal-img-counter">1 / 11</div>
             </div>
 
             <h3 class="modal-title">PROJECT IGPAT: Empowering Communities Through Health and Service</h3>
@@ -1431,24 +1433,24 @@
                 <img src="comingsoon.jpg" alt="Panugod 2026" class="modal-img">
             </div>
             <h3 class="modal-title">𝑷𝒂𝒏𝒖𝒈𝒐𝒅 𝟐𝟎𝟐𝟔: 𝑺𝒕𝒖𝒅𝒆𝒏𝒕 𝑳𝒆𝒂𝒅𝒆𝒓𝒔’ 𝑺𝒕𝒓𝒂𝒕𝒆𝒈𝒊𝒄 𝑨𝒍𝒊𝒈𝒏𝒎𝒆𝒏𝒕 𝒂𝒏𝒅 𝑪𝒂𝒑𝒂𝒄𝒊𝒕𝒚-𝑩𝒖𝒊𝒍𝒅𝒊𝒏𝒈 𝑺𝒖𝒎𝒎𝒊𝒕</h3>
-            <p class="modal-date">Scheduled Date: September 19, 2026 | Location: ISAT U Multi-Purpose Hall</p>
+            <p class="modal-date">Scheduled Date: September 25, 2026 | Location: ISAT U Multi-Purpose Hall</p>
             <p class="modal-description">
                 An upcoming leadership summit designed to deliver interactive workshops and parliamentary procedure training.
             </p>
         </div>
     </div>
 
-    <!-- MODAL 4 -->
-    <div id="modal4" class="modal-overlay" onclick="closeModalOnOutsideClick(event, 'modal4')">
+    <!-- MODAL 5: TDA GENERAL ASSEMBLY -->
+    <div id="modal5" class="modal-overlay" onclick="closeModalOnOutsideClick(event, 'modal5')">
         <div class="modal-box">
-            <button class="modal-close-btn" onclick="closeModal('modal4')">&times;</button>
+            <button class="modal-close-btn" onclick="closeModal('modal5')">&times;</button>
             <div class="modal-gallery">
-                <img src="comingsoon.jpg" alt="Green ISAT U" class="modal-img">
+                <img src="tdageneralassembly.jpg" alt="TDA General Assembly" class="modal-img">
             </div>
-            <h3 class="modal-title">Green ISAT U Environmental Drive</h3>
-            <p class="modal-date">Scheduled Date: October 27, 2026 | Location: ISAT U Campus Grounds</p>
+            <h3 class="modal-title">TDA General Assembly 2026</h3>
+            <p class="modal-date">Date: September 18, 2026 | Location: ISAT U Main Campus</p>
             <p class="modal-description">
-                An eco-friendly initiative focused on active campus cleanliness and tree-planting activities across campus grounds.
+                The annual Tradean Democratic Alliance General Assembly bringing together members, officers, and constituents to align organizational goals, discuss key initiatives, and reinforce the commitment to Good Faith, Justice, and Democracy.
             </p>
         </div>
     </div>
@@ -1463,7 +1465,7 @@
             </div>
             <div class="contact-item">
                 <span class="contact-label">Official Facebook Page</span>
-                <a href="https://facebook.com" target="_blank" class="contact-value">TDA</a>
+                <a href="https://www.facebook.com/TradeanDemocraticAlliance" target="_blank" rel="noopener noreferrer" class="contact-value">TDA</a>
             </div>
         </div>
     </section>
