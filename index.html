@@ -606,10 +606,10 @@
             background: rgba(5, 12, 26, 0.6);
             border: 1px solid rgba(255, 215, 0, 0.3);
             color: #CBD5E1;
-            padding: 10px 24px;
+            padding: 10px 20px;
             border-radius: 30px;
             font-family: 'Montserrat', sans-serif;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -1303,11 +1303,12 @@
                 <h3 class="ay-title">Academic Year 2026–2027</h3>
             </div>
 
-            <!-- THREE CATEGORY FILTER TABS -->
+            <!-- FOUR CATEGORY FILTER TABS BASED ON SPECIFIED CATEGORIES -->
             <div class="project-tabs">
-                <button class="tab-btn active" onclick="filterProjects('organized', this)">Organized Events</button>
-                <button class="tab-btn" onclick="filterProjects('partnered', this)">Partnered Initiatives</button>
-                <button class="tab-btn" onclick="filterProjects('joined', this)">Participated Events</button>
+                <button class="tab-btn active" onclick="filterProjects('org-led', this)">Organizational Led Events</button>
+                <button class="tab-btn" onclick="filterProjects('collaborative', this)">Collaborative Events</button>
+                <button class="tab-btn" onclick="filterProjects('org-part', this)">Organizational Participation</button>
+                <button class="tab-btn" onclick="filterProjects('mem-eng', this)">Membership Engagement</button>
             </div>
 
             <div class="projects-slider-wrapper">
@@ -1316,8 +1317,8 @@
                 <div class="projects-viewport">
                     <div class="projects-track" id="projectsTrack">
                         
-                        <!-- 1. ORGANIZED EVENTS / ACTIVITIES -->
-                        <div class="event-box" data-category="organized" onclick="openModal('modal5')">
+                        <!-- 1. ORGANIZATIONAL LED EVENTS -->
+                        <div class="event-box" data-category="org-led" onclick="openModal('modal5')">
                             <div class="preview-header-row">
                                 <span class="preview-date">Sept 18, 2026</span>
                                 <span class="status-badge completed">Completed</span>
@@ -1325,24 +1326,12 @@
                             <div class="preview-thumb-wrapper">
                                 <img src="tdageneralassembly.png" class="preview-thumb" alt="TDA 1st General Assembly">
                             </div>
-                            <h4 class="preview-title">TDA TDA 1st General Assembly 2026</h4>
-                            <p class="preview-description">The general assembly bringing together members and officers of the Tradean Democratic Alliance.</p>
+                            <h4 class="preview-title">TDA 1st General Assembly 2026</h4>
+                            <p class="preview-description">Organized by TDA itself to bring together members and officers of the Tradean Democratic Alliance.</p>
                         </div>
 
-                        <!-- 2. PARTNERED EVENTS / ACTIVITIES -->
-                        <div class="event-box" data-category="partnered" onclick="openModal('modal3')">
-                            <div class="preview-header-row">
-                                <span class="preview-date">Sept 25, 2026</span>
-                                <span class="status-badge upcoming">Upcoming</span>
-                            </div>
-                            <div class="preview-thumb-wrapper">
-                                <img src="comingsoon.jpg" class="preview-thumb" alt="Panugod 2026">
-                            </div>
-                            <h4 class="preview-title">𝑷𝒂𝒏𝒖𝒈𝒐𝒅 𝟐𝟎𝟐𝟔: 𝑺𝒕𝒖𝒅𝒆𝒏𝒕 𝑳𝒆𝒂𝒅𝒆𝒓𝒔’ 𝑺𝒕𝒓𝒂𝒕𝒆𝒈𝒊𝒄 𝑨𝒍𝒊𝒈𝒏𝒎𝒆𝒏𝒕 𝒂𝒏𝒅 𝑪𝒂𝒑𝒂𝒄𝒊𝒕𝒚-𝑩𝒖𝒊𝒍𝒅𝒊𝒏𝒈 𝑺𝒖𝒎𝒎𝒊𝒕</h4>
-                            <p class="preview-description">Skill-building workshops aimed at developing leadership capabilities and parliamentary procedures for student leaders.</p>
-                        </div>
-
-                        <div class="event-box" data-category="partnered" onclick="openModal('modal1')">
+                        <!-- 2. COLLABORATIVE EVENTS -->
+                        <div class="event-box" data-category="collaborative" onclick="openModal('modal1')">
                             <div class="preview-header-row">
                                 <span class="preview-date">May 16, 2026</span>
                                 <span class="status-badge completed">Completed</span>
@@ -1351,11 +1340,23 @@
                                 <img src="IGPAT.jpg" class="preview-thumb" alt="Project IGPAT">
                             </div>
                             <h4 class="preview-title">PROJECT IGPAT: Empowering Communities Through Health and Service</h4>
-                            <p class="preview-description">The spirit of volunteerism and youth leadership came alive as TDA proudly partnered with TOSIA 2026 for Project IGPAT at Barangay Sooc, Arevalo, Iloilo City.</p>
+                            <p class="preview-description">TDA partnered and collaborated with TOSIA 2026 for Project IGPAT at Barangay Sooc, Arevalo, Iloilo City.</p>
                         </div>
 
-                        <!-- 3. JOINED / PARTICIPATED EVENTS / ACTIVITIES -->
-                        <div class="event-box" data-category="joined" onclick="openModal('modal2')">
+                        <div class="event-box" data-category="collaborative" onclick="openModal('modal3')">
+                            <div class="preview-header-row">
+                                <span class="preview-date">Sept 25, 2026</span>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            <div class="preview-thumb-wrapper">
+                                <img src="comingsoon.jpg" class="preview-thumb" alt="Panugod 2026">
+                            </div>
+                            <h4 class="preview-title">𝑷𝒂𝒏𝒖𝒈𝒐𝒅 𝟐𝟎𝟐𝟔: 𝑺𝒕𝒖𝒅𝒆𝒏𝒕 𝑳𝒆𝒂𝒅𝒆𝒓𝒔’ 𝑺𝒕𝒓𝒂𝒕𝒆𝒈𝒊𝒄 𝑨𝒍𝒊𝒈𝒏𝒎𝒆𝒏𝒕 𝒂𝒏𝒅 𝑪𝒂𝒑𝒂𝒄𝒊𝒕𝒚-𝑩𝒖𝒊𝒍𝒅𝒊𝒏𝒈 𝑺𝒖𝒎𝒎𝒊𝒕</h4>
+                            <p class="preview-description">Collaborative capacity-building summit for student leaders focusing on strategic alignment and parliamentary procedures.</p>
+                        </div>
+
+                        <!-- 3. ORGANIZATIONAL PARTICIPATION -->
+                        <div class="event-box" data-category="org-part" onclick="openModal('modal2')">
                             <div class="preview-header-row">
                                 <span class="preview-date">AY 2026</span>
                                 <span class="status-badge completed">Completed</span>
@@ -1364,7 +1365,21 @@
                                 <img src="NextGenPh.png" class="preview-thumb" alt="NextGenPH Competition">
                             </div>
                             <h4 class="preview-title">NextGenPH Competition Entries</h4>
-                            <p class="preview-description">At this year's NextGenPH competition, the Tradean Democratic Alliance presented four forward-thinking, resilient solutions designed to address energy grid failures, fuel shortages, and rural infrastructure challenges.</p>
+                            <p class="preview-description">TDA officers officially represented TDA at the NextGenPH competition, presenting four innovative solution projects.</p>
+                        </div>
+
+                        <!-- 4. MEMBERSHIP ENGAGEMENT -->
+                        <!-- Placeholder card for Membership Engagement -->
+                        <div class="event-box" data-category="mem-eng" style="display: none;">
+                            <div class="preview-header-row">
+                                <span class="preview-date">Ongoing</span>
+                                <span class="status-badge completed">Active</span>
+                            </div>
+                            <div class="preview-thumb-wrapper">
+                                <img src="comingsoon.jpg" class="preview-thumb" alt="Membership Engagement">
+                            </div>
+                            <h4 class="preview-title">Member Engagement & Community Activities</h4>
+                            <p class="preview-description">Events and activities joined by TDA officers and members without directly carrying the official TDA title.</p>
                         </div>
 
                     </div>
@@ -1767,10 +1782,10 @@
             track.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
         }
 
-        // Initialize default view to Organized events on page load
+        // Initialize default view to Organizational Led events on page load
         document.addEventListener('DOMContentLoaded', () => {
             const defaultTab = document.querySelector('.tab-btn.active');
-            filterProjects('organized', defaultTab);
+            filterProjects('org-led', defaultTab);
         });
 
         /* Project IGPAT Gallery */
